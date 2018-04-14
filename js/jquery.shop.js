@@ -304,7 +304,6 @@
 		},
 		
 		// Empties the cart by calling the _emptyCart() method
-		// @see $.Shop._emptyCart()
 		
 		emptyCart: function() {
 			var self = this;
@@ -425,11 +424,7 @@
 			this.storage.clear();
 		},
 		
-		/* Format a number by decimal places
-		 * @param num Number the number to be formatted
-		 * @param places Number the decimal places
-		 * @returns n Number the formatted number
-		 */
+
 		 
 		 
 		
@@ -438,10 +433,7 @@
 			return n;
 		},
 		
-		/* Extract the numeric portion from a string
-		 * @param element Object the jQuery element that contains the relevant string
-		 * @returns price String the numeric string
-		 */
+
 		
 		
 		_extractPrice: function( element ) {
