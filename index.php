@@ -13,7 +13,6 @@
 		if($insert){
 			
 			echo "<script>alert('Thank You.We Got Your Message')</script>";
-			// header('location: #contact');
 			
 		}
 	}
