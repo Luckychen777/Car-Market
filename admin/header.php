@@ -1,9 +1,3 @@
-<?php
-
-
-
-?>
-
 
 
 <div class="header-area col-md-12 text-center">
