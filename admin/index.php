@@ -33,9 +33,6 @@
 
 	}
 
-
-
-
 ?>
 
 
@@ -48,7 +45,6 @@
 
 			function title(){
 
-			// ... change title name...
 			echo $mytitle= "Admin Login";
 			
 		}
