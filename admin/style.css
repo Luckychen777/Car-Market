@@ -1,0 +1,148 @@
+body{
+	margin:0;
+	
+}
+.add{
+	background-color:#3498db;
+}
+.container{
+	width:90%;
+	margin:auto;
+}
+.admin-area{
+	width:100%;
+	background-color:#2980b9;
+	overflow: hidden;
+	margin: auto;
+}
+.form-area{
+	width:80% !important;
+	/*margin: auto;*/
+	overflow: hidden;
+
+}
+.form-area h2{
+	font-size: 29px;
+	text-transform: capitalize;
+	text-align: center;
+	/*margin-top:30px 0;*/
+	color:#fff;
+}
+.form-area form{
+	margin-top:19%;
+	margin-left:35%;
+}
+.form-area form input{
+	width:50%;
+	display: block;
+	padding: 10px 5px;
+	margin:10px 0;
+	border-style: box;
+	border-radius: 5px;
+	border:1px solid #fff;
+}
+.form-area form input[type='submit']{
+	width:52%;
+	cursor:pointer;
+	color:#fff;
+	background-color:#000;
+	border:1px solid #000;
+	padding: 10px 5px;
+}
+/*.form-area form input[type='submit']:hover{
+	background-color:#2980b9;
+	color:#000;
+	transition: 1s;
+}*/
+
+.error{
+    color:red;
+    font-size:17px;
+    font-weight:bold;
+}
+
+.header-area{
+	width:100%;
+	overflow:hidden;
+	background-color:#06265F;
+}
+.header-area ul{
+	padding: 0;
+	margin:0;
+	text-align: center;
+	margin:auto;
+	float:right;
+}
+.header-area ul li{
+	padding: 15px 10px;
+	text-align: center;
+	float:right;
+	overflow:hidden;
+}
+.header-area ul li:hover{
+	background-color:#e74c3c;
+	color:#fff;
+}
+.header-area ul li a{
+	font-size: 19px;
+	color:#fff;
+}
+.header-area ul li:hover a{
+	color:#fff;
+}
+.welcome-contnet{
+	width:100%;
+	background:url('../images/banner.jpg') 100% 100% repeat fixed #333;
+	padding: 40px 0;
+	z-index: 0;
+	/*margin-top:40px;*/
+	overflow:hidden;
+}
+.welcome-content .short-line hr{
+	color:#fff;
+	border: 2px solid #fff;
+}
+.welcome-contnet h2,h3,h4,p{
+	color:#fff;
+}
+.contact-info{
+	padding: 50px 0;
+	width:100%;
+	overflow:hidden;
+	margin:auto;
+	/*margin-top:122px !important;*/
+}
+.table-area{
+  width:100%;
+  text-align: center;
+  overflow-x: hidden;
+  padding: 40px ;
+  margin-left:15%;
+} 
+.table-area table th,
+.table-area-2 table th{
+	background-color:#2B7DBC;
+	color:#fff;
+	border:1px solid #fff;
+	padding: 5px 5px;
+}
+.table-area table td,
+.table-area-2 table td{
+	border:1px solid #E9ECEF;
+	color:#000;
+	padding: 5px 5px;
+}
+.table-area table td textarea{
+	float:left;
+	text-align: center;
+}
+.table-area tbody{
+	width:80%;
+}
+.cover-area{
+	margin-top:60px;
+}
+.admin-area .form-area{
+	margin:auto;
+	width:100%;
+}
