@@ -41,12 +41,11 @@ if ($_FILES["fileToUpload"]["size"] > 5000000) {
 }
 	    if ($uploadOk == 0) {
    echo'<script>alert("Sorry File Was Not Uploaded")</script>';
-// if everything is ok, try to upload file
+
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo '<script>alert("The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.")</script>';
     } else {
-       
 
         header('location: carnew.php');
          echo'<script>alert("Sorry File Was Not Uploaded")</script>';
