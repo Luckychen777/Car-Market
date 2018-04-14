@@ -8,9 +8,7 @@
 	if(isset($_SESSION['success'])){
 	header('location: dashboard.php');
 	}
-
-
-
+    
 
 	if(isset($_POST['login'])){
 		$email = $_POST['email'];
@@ -24,10 +22,34 @@
 		if(count($error)==0){
 			$check = mysqli_query($connection,"SELECT pass FROM user WHERE email='$email'");
 			while($passHolder = $check->fetch_assoc()){
-				if($pass== $passHolder['pass']){
-					$_SESSION['success']= '';
-					$_SESSION['email'] = $email;
-					header('location: dashboard.php');
+				if($pass== $passHolder['pass'])
+				{
+					if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+    					$ip = $_SERVER['HTTP_CLIENT_IP'];
+					} 
+					elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+   					    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+					} 
+					else {
+    					$ip = $_SERVER['REMOTE_ADDR'];
+					}
+					//$location = file_get_contents('http://freegeoip.net/json/'.$_SERVER['REMOTE_ADDR']);
+					//$location = file_get_contents('http://freegeoip.net/json/72.229.28.185');
+
+					$geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=103.73.104.235"));
+					$country = $geo["geoplugin_countryName"];
+					
+					if (strpos($country, 'desh') != false) 
+					{
+						$_SESSION['success']= '';
+						$_SESSION['email'] = $email;
+						header('location: dashboard.php');
+					}
+					else
+					{
+						//$error['nt']=$country;
+						$fail= "<h2 style='color:#000'>You're Blocked, Please contact an administrator!</h2>";
+					}
 				}
 				else{
 					$fail= "<h2 style='color:#000'>Wrong Password</h2>";
