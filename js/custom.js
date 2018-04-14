@@ -8,26 +8,7 @@
  		 } );
 
 
-		// .. bid data ...
-		// jQuery(".pform").submit(function(){
-
-		// 	var price = jQuery(".cprice").val();
-		// 	var email = jQuery(".cemail").val();
-		// 	$.ajax({
-		// 		'url' : 'bid.php',
-		// 		'type' : 'POST',
-		// 		'data' : {
-		// 			'myupdate' : '',
-		// 			'price' : price,
-		// 			'email' : email,
-		// 		},
-		// 		'success' : function(){
-		// 			jQuery(".cprice").val('');
-		// 			jQuery('.cemail').val('');
-		// 		}
-		// 	});
-		// 	return false;
-		// });
+	
 
 
 		setTimeout(function(){
